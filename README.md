@@ -8,6 +8,7 @@ Exercise solutions for chapter 1.4 written in Java
 4. Binary Search, `O(lg(N))`
 5. NumPairs.count(), `O(N²)`
 6. NumPairs.countFast(), `O(N∙lg(N))`
+7. NumPairs.countFastest(), `O(N)`
 
 ## Code Examples
 1. LinearTwoSum:  
