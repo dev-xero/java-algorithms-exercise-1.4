@@ -13,7 +13,6 @@ Exercise solutions for chapter 1.4 written in Java
 
 ## Code Examples
 1. LinearTwoSum:  
-
    We can implement `TwoSum` using a linear approach by utilizing two pointers positioned at the left and right ends of the sorted array. This algorithm is optimized for performance when the array is already sorted. In case the target sum cannot be obtained from the array, the algorithm returns an array with indices set to -1.
    
 ```java
@@ -40,7 +39,6 @@ public class LinearTwoSum {
 ```
 
 2. BinarySearch.rankClosest:  
-
    To modify `BinarySearch` to find the element with the smallest index, we make an adjustment after finding a match. Instead of terminating the search, we continue searching in the left (lower indices) subarray to look for a possible earlier occurrence of the search element.
    
 ```java
