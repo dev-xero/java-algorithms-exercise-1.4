@@ -3,6 +3,8 @@ package Algorithms;
 import Searching.BinarySearch;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class NumPairs {
     public int count(int[] theArray) {
@@ -31,12 +33,30 @@ public class NumPairs {
         return cnt;
     }
 
+    public int countFastest(int[] theArray) {
+        int cnt = 0;
+        Map<Integer, Integer> freqMap = new HashMap<>();
+
+        for (int num : theArray) {
+            if (freqMap.containsKey(num)) {
+                cnt += freqMap.get(num);
+            } else {
+                freqMap.put(num, 0);
+            }
+            freqMap.put(num, freqMap.get(num) + 1);
+        }
+
+        return cnt;
+    }
+
     public static void main(String[] args) {
         int[] testArray = new int[] {1, 2, 3, 4, 1, 4};
         int pairCount = new NumPairs().count(testArray);
         int fastPairCount = new NumPairs().countFast(testArray);
+        int fastestPairCount = new NumPairs().countFastest(testArray);
 
         System.out.printf("Normal - %d\n", pairCount);
         System.out.printf("Fast - %d\n", fastPairCount);
+        System.out.printf("Fastest - %d\n", fastestPairCount);
     }
 }
