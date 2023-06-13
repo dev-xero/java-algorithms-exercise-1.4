@@ -5,10 +5,11 @@ Exercise solutions for chapter 1.4 written in Java
 1. TwoSum, `O(N∙lg(N))`
 2. LinearTwoSum, `O(N)`
 3. ThreeSum, `O(N²∙lg(N))`
-4. Binary Search, `O(lg(N))`
-5. NumPairs.count(), `O(N²)`
-6. NumPairs.countFast(), `O(N∙lg(N))`
-7. NumPairs.countFastest(), `O(N)`
+4. Binary Search.rank(), `O(lg(N))`
+5. Binary Search.rankClosest(), `O(lg(N))`
+6. NumPairs.count(), `O(N²)`
+7. NumPairs.countFast(), `O(N∙lg(N))`
+8. NumPairs.countFastest(), `O(N)`
 
 ## Code Examples
 1. LinearTwoSum:  
@@ -33,5 +34,37 @@ public class LinearTwoSum {
 
         return new int[]{-1, -1};
     }
+}
+```
+
+2. BinarySearch.rankClosest:  
+   To modify `BinarySearch` to find the element with the smallest index, we make an adjustment after finding a match. Instead of terminating the search, we continue searching in the left (lower indices) subarray to look for a possible earlier occurrence of the search element.
+```java
+public class BinarySearch {
+   public int rankClosest(int[] theArray, int key) {
+     // Returns the element with the smallest index that matches the key
+     int index = -1;
+     int left = 0;
+     int right = theArray.length - 1;
+
+     while (left <= right) {
+         int mid = left + (right - left) / 2;
+
+         if (theArray[mid] == key) {
+             index = mid;
+             right = mid - 1;
+             continue;
+         }
+
+         if (theArray[mid] > key) {
+             right = mid - 1;
+             continue;
+         }
+
+         left = mid + 1;
+     }
+
+     return index;
+ }
 }
 ```
