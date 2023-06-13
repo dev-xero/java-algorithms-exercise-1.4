@@ -8,7 +8,7 @@ Exercise solutions for chapter 1.4 written in Java
 4. Binary Search, `O(lg(N))`
 
 ## Code Examples
-1. LinearTwoSum
+1. LinearTwoSum:  
 We can implement `TwoSum` using a linear approach by utilizing two pointers positioned at the left and right ends of the sorted array. This algorithm is optimized for performance when the array is already sorted. In case the target sum cannot be obtained from the array, the algorithm returns an array with indices set to -1.
 ```java
 public class LinearTwoSum {
