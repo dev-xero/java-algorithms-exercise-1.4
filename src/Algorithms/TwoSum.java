@@ -1,25 +1,13 @@
 package Algorithms;
 
-// ----------------------------------------------------------------------------------------------------
-
-
 import Searching.BinarySearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
-// ----------------------------------------------------------------------------------------------------
-
-
 public class TwoSum {
-
     public int count = 0;
-
-
-    // ----------------------------------------------------------------------------------------------------
-
 
     public List<String> computeTwoSum(int[] theArray) {
         // Returns a list of pairs for which each pair sums to zero
@@ -46,10 +34,6 @@ public class TwoSum {
         return res;
     }
 
-
-    // ----------------------------------------------------------------------------------------------------
-
-
     public static void main(String[] args) {
         //Testing
         int[] testArray = {1, 3, 4, -2, 1, -1, -4, 0, 0};
@@ -57,5 +41,4 @@ public class TwoSum {
 
         System.out.println(twoSum.computeTwoSum(testArray));
     }
-
 }
