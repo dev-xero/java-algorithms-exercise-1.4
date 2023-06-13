@@ -51,9 +51,11 @@ public class NumPairs {
 
     public static void main(String[] args) {
         int[] testArray = new int[] {1, 2, 3, 4, 1, 4};
-        int pairCount = new NumPairs().count(testArray);
-        int fastPairCount = new NumPairs().countFast(testArray);
-        int fastestPairCount = new NumPairs().countFastest(testArray);
+        NumPairs numPairs = new NumPairs();
+
+        int pairCount = numPairs.count(testArray);
+        int fastPairCount = numPairs.countFast(testArray);
+        int fastestPairCount = numPairs.countFastest(testArray);
 
         System.out.printf("Normal - %d\n", pairCount);
         System.out.printf("Fast - %d\n", fastPairCount);
