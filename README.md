@@ -6,6 +6,7 @@ Exercise solutions for chapter 1.4 written in Java
 2. LinearTwoSum, `O(N)`
 3. ThreeSum, `O(N^2lg(N))`
 4. Binary Search, `O(lg(N))`
+5. NumPairs.count(), `O(N^2)`
 
 ## Code Examples
 1. LinearTwoSum:  
