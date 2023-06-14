@@ -1,7 +1,5 @@
 package Algorithms;
 
-import java.util.Arrays;
-
 public class Pair {
     public double[] closest(double[] theArray) {
         // Returns a pair of adjacent doubles whose absolute difference is no larger than any other pair
