@@ -13,6 +13,7 @@ Exercise solutions for chapter 1.4 written in Java
 9. NumPairs.countFastest(), `O(N)`
 10. Pair.closest(), `O(N)`
 11. Pair.farthest(), `O(N)`
+12. LocalMinimum.find(), `O(lg(N))`
 
 ## Code Examples
 1. LinearTwoSum:  
