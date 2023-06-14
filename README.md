@@ -11,6 +11,8 @@ Exercise solutions for chapter 1.4 written in Java
 7. NumPairs.count(), `O(N²)`
 8. NumPairs.countFast(), `O(N∙lg(N))`
 9. NumPairs.countFastest(), `O(N)`
+10. Pair.closest(), `O(N)`
+11. Pair.farthest(), `O(N)`
 
 ## Code Examples
 1. LinearTwoSum:  
