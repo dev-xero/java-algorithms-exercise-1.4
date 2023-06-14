@@ -14,6 +14,7 @@ Exercise solutions for chapter 1.4 written in Java
 10. Pair.closest(), `O(N)`
 11. Pair.farthest(), `O(N)`
 12. LocalMinimum.find(), `O(lg(N))`
+13. BitonicSearch.isBitonic(), `O(lg(N))`
 
 ## Code Examples
 1. LinearTwoSum:  
