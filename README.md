@@ -5,11 +5,12 @@ Exercise solutions for chapter 1.4 written in Java
 1. TwoSum, `O(N∙lg(N))`
 2. LinearTwoSum, `O(N)`
 3. ThreeSum, `O(N²∙lg(N))`
-4. Binary Search.rank(), `O(lg(N))`
-5. Binary Search.rankClosest(), `O(lg(N))`
-6. NumPairs.count(), `O(N²)`
-7. NumPairs.countFast(), `O(N∙lg(N))`
-8. NumPairs.countFastest(), `O(N)`
+4. QuadraticThreeSum, `O(N²)`
+5. Binary Search.rank(), `O(lg(N))`
+6. Binary Search.rankClosest(), `O(lg(N))`
+7. NumPairs.count(), `O(N²)`
+8. NumPairs.countFast(), `O(N∙lg(N))`
+9. NumPairs.countFastest(), `O(N)`
 
 ## Code Examples
 1. LinearTwoSum:  
