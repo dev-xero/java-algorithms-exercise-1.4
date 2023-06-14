@@ -6,15 +6,16 @@ Exercise solutions for chapter 1.4 written in Java
 2. LinearTwoSum, `O(N)`
 3. ThreeSum, `O(N²∙lg(N))`
 4. QuadraticThreeSum, `O(N²)`
-5. Binary Search.rank(), `O(lg(N))`
-6. Binary Search.rankClosest(), `O(lg(N))`
-7. NumPairs.count(), `O(N²)`
-8. NumPairs.countFast(), `O(N∙lg(N))`
-9. NumPairs.countFastest(), `O(N)`
-10. Pair.closest(), `O(N)`
-11. Pair.farthest(), `O(N)`
-12. LocalMinimum.find(), `O(lg(N))`
-13. BitonicSearch.isBitonic(), `O(lg(N))`
+5. CubicFourSum, `O(N³)`
+6. Binary Search.rank(), `O(lg(N))`
+7. Binary Search.rankClosest(), `O(lg(N))`
+8. NumPairs.count(), `O(N²)`
+9. NumPairs.countFast(), `O(N∙lg(N))`
+10. NumPairs.countFastest(), `O(N)`
+11. Pair.closest(), `O(N)`
+12. Pair.farthest(), `O(N)`
+13. LocalMinimum.find(), `O(lg(N))`
+14. BitonicSearch.isBitonic(), `O(lg(N))`
 
 ## Code Examples
 1. LinearTwoSum:  
