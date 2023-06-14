@@ -2,8 +2,8 @@ package Algorithms;
 
 import java.util.Arrays;
 
-public class ClosestPair {
-    public double[] pair(double[] theArray) {
+public class Pair {
+    public double[] closest(double[] theArray) {
         // Returns a pair of adjacent ints whose absolute difference is no larger than any other pair
         Arrays.sort(theArray);
 
@@ -26,9 +26,9 @@ public class ClosestPair {
     public static void main(String[] args) {
         // Testing
         double[] testArray = new double[] {1.0, 2.0, 3.3, 6.0, 8.0, 11.0};
-        ClosestPair closestPair = new ClosestPair();
+        Pair pair = new Pair();
 
-        double[] theClosestPair = closestPair.pair(testArray);
+        double[] theClosestPair = pair.closest(testArray);
         System.out.printf("[%f, %f]", theClosestPair[0], theClosestPair[1]);
     }
 }
